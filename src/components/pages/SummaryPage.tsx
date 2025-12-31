@@ -142,7 +142,7 @@ export function SummaryPage({ data }: SummaryPageProps) {
             🎉 Thanks for using Canvas Wrapped!
           </p>
           <p className="retro-text-dim text-responsive-xs mt-2">
-            https://canvas-wrapped.ph/
+            https://canvas-wrapped-pi.vercel.app/
           </p>
         </div>
       </div>
