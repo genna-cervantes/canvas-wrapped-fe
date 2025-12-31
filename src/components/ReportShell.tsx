@@ -256,6 +256,11 @@ export function ReportShell() {
           throw new Error('Invalid response from server.')
         }
         
+        // Check if assignments total is 0 - indicates invalid token
+        if (responseData.assignments?.total === 0) {
+          throw new Error('Invalid or expired token. Please check your Canvas token.')
+        }
+        
         return responseData as ReportData
       } catch (err) {
         clearTimeout(timeoutId)
