@@ -402,6 +402,14 @@ export function ReportShell() {
               >
                 START
               </button>
+              {cachedData && (
+                <button
+                  onClick={handleLogout}
+                  className="block w-full mt-4 text-responsive-sm retro-text-dim hover:text-red-400 transition-colors underline"
+                >
+                  🗑️ Erase cached data
+                </button>
+              )}
             </div>
           </div>
         )
